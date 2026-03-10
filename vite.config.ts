@@ -1,8 +1,10 @@
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import unoCSS from "unocss/vite";
+import { presetWind4 } from "unocss";
+
 import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-	plugins: [svelte(), unoCSS()],
+	plugins: [svelte(), unoCSS({ presets: [presetWind4()] })],
 });

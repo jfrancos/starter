@@ -6,13 +6,14 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"includes": ["src/**", "!src/main.ts"],
+		"includes": ["**", "!src/main.ts"],
 		"ignoreUnknown": false
 	},
 	"formatter": {
 		"enabled": true
 	},
 	"linter": {
+		"includes": ["**", "!src/**/*.svelte"],
 		"enabled": true,
 		"rules": {
 			"recommended": true
