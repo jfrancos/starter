@@ -10,7 +10,8 @@
 		"ignoreUnknown": false
 	},
 	"formatter": {
-		"enabled": true
+		"enabled": true,
+		"indentWidth": 2
 	},
 	"linter": {
 		"includes": ["**", "!src/**/*.svelte"],
