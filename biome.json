@@ -6,7 +6,6 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"includes": ["**", "!src/main.ts"],
 		"ignoreUnknown": false
 	},
 	"formatter": {
@@ -14,7 +13,7 @@
 		"indentWidth": 2
 	},
 	"linter": {
-		"includes": ["**", "!src/**/*.svelte"],
+		"includes": ["**", "!src/**/*.svelte", "!src/main.ts"],
 		"enabled": true,
 		"rules": {
 			"recommended": true
