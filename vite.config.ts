@@ -1,3 +1,4 @@
+import path from "node:path";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { presetWind4 } from "unocss";
 import unoCSS from "unocss/vite";
@@ -11,4 +12,9 @@ export default defineConfig({
 		svelte(),
 		unoCSS({ presets: [presetWind4, presetAnimations, presetShadcn] }),
 	],
+	resolve: {
+		alias: {
+			$lib: path.resolve("./src/lib"),
+		},
+	},
 });
