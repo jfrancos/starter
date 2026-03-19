@@ -6,6 +6,8 @@ import presetAnimations from "unocss-preset-animations";
 import { presetShadcn } from "unocss-preset-shadcn";
 import { defineConfig } from "vite";
 
+// Non-null checks??
+
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [
